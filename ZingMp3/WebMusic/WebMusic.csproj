@@ -1,0 +1,778 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D38AA99-EE1D-4C7B-9E51-A139093476D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebMusic</RootNamespace>
+    <AssemblyName>WebMusic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Admin.aspx" />
+    <Content Include="admin\Playy.aspx" />
+    <Content Include="admin\QLCASI.aspx" />
+    <Content Include="admin\QLMuSic.aspx" />
+    <Content Include="admin\QLTheLoai.aspx" />
+    <Content Include="BaiHat.aspx" />
+    <Content Include="DangKi.aspx" />
+    <Content Include="DangNhap.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="admin\Logout.aspx" />
+    <Content Include="Play.aspx" />
+    <Content Include="Public\css\bootstrap.min.css" />
+    <Content Include="Public\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Public\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Public\css\login.css" />
+    <Content Include="Public\css\owl.carousel.min.css" />
+    <Content Include="Public\css\reponsive.css" />
+    <Content Include="Public\css\style.css" />
+    <Content Include="Public\fonts\demo-files\demo.css" />
+    <Content Include="Public\fonts\fonts\themify.svg" />
+    <Content Include="Public\fonts\ie7\ie7.css" />
+    <Content Include="Public\fonts\ie7\ie7.js" />
+    <Content Include="Public\fonts\index.html" />
+    <Content Include="Public\fonts\readme.txt" />
+    <Content Include="Public\fonts\SVG\agenda.svg" />
+    <Content Include="Public\fonts\SVG\alarm-clock.svg" />
+    <Content Include="Public\fonts\SVG\alert.svg" />
+    <Content Include="Public\fonts\SVG\align-center.svg" />
+    <Content Include="Public\fonts\SVG\align-justify.svg" />
+    <Content Include="Public\fonts\SVG\align-left.svg" />
+    <Content Include="Public\fonts\SVG\align-right.svg" />
+    <Content Include="Public\fonts\SVG\anchor.svg" />
+    <Content Include="Public\fonts\SVG\android.svg" />
+    <Content Include="Public\fonts\SVG\angle-double-down.svg" />
+    <Content Include="Public\fonts\SVG\angle-double-left.svg" />
+    <Content Include="Public\fonts\SVG\angle-double-right.svg" />
+    <Content Include="Public\fonts\SVG\angle-double-up.svg" />
+    <Content Include="Public\fonts\SVG\angle-down.svg" />
+    <Content Include="Public\fonts\SVG\angle-left.svg" />
+    <Content Include="Public\fonts\SVG\angle-right.svg" />
+    <Content Include="Public\fonts\SVG\angle-up.svg" />
+    <Content Include="Public\fonts\SVG\announcement.svg" />
+    <Content Include="Public\fonts\SVG\apple.svg" />
+    <Content Include="Public\fonts\SVG\archive.svg" />
+    <Content Include="Public\fonts\SVG\arrow-circle-down.svg" />
+    <Content Include="Public\fonts\SVG\arrow-circle-left.svg" />
+    <Content Include="Public\fonts\SVG\arrow-circle-right.svg" />
+    <Content Include="Public\fonts\SVG\arrow-circle-up.svg" />
+    <Content Include="Public\fonts\SVG\arrow-down.svg" />
+    <Content Include="Public\fonts\SVG\arrow-left.svg" />
+    <Content Include="Public\fonts\SVG\arrow-right.svg" />
+    <Content Include="Public\fonts\SVG\arrow-top-left.svg" />
+    <Content Include="Public\fonts\SVG\arrow-top-right.svg" />
+    <Content Include="Public\fonts\SVG\arrow-up.svg" />
+    <Content Include="Public\fonts\SVG\arrow.svg" />
+    <Content Include="Public\fonts\SVG\arrows-corner.svg" />
+    <Content Include="Public\fonts\SVG\arrows-horizontal.svg" />
+    <Content Include="Public\fonts\SVG\arrows-vertical.svg" />
+    <Content Include="Public\fonts\SVG\back-left.svg" />
+    <Content Include="Public\fonts\SVG\back-right.svg" />
+    <Content Include="Public\fonts\SVG\bag.svg" />
+    <Content Include="Public\fonts\SVG\bar-chart-alt.svg" />
+    <Content Include="Public\fonts\SVG\bar-chart.svg" />
+    <Content Include="Public\fonts\SVG\basketball.svg" />
+    <Content Include="Public\fonts\SVG\bell.svg" />
+    <Content Include="Public\fonts\SVG\blackboard.svg" />
+    <Content Include="Public\fonts\SVG\bolt-alt.svg" />
+    <Content Include="Public\fonts\SVG\bolt.svg" />
+    <Content Include="Public\fonts\SVG\book.svg" />
+    <Content Include="Public\fonts\SVG\bookmark-alt.svg" />
+    <Content Include="Public\fonts\SVG\bookmark.svg" />
+    <Content Include="Public\fonts\SVG\briefcase.svg" />
+    <Content Include="Public\fonts\SVG\brush-alt.svg" />
+    <Content Include="Public\fonts\SVG\brush.svg" />
+    <Content Include="Public\fonts\SVG\calendar.svg" />
+    <Content Include="Public\fonts\SVG\camera.svg" />
+    <Content Include="Public\fonts\SVG\car.svg" />
+    <Content Include="Public\fonts\SVG\check-box.svg" />
+    <Content Include="Public\fonts\SVG\check.svg" />
+    <Content Include="Public\fonts\SVG\clip.svg" />
+    <Content Include="Public\fonts\SVG\clipboard.svg" />
+    <Content Include="Public\fonts\SVG\close.svg" />
+    <Content Include="Public\fonts\SVG\cloud-down.svg" />
+    <Content Include="Public\fonts\SVG\cloud-up.svg" />
+    <Content Include="Public\fonts\SVG\cloud.svg" />
+    <Content Include="Public\fonts\SVG\comment-alt.svg" />
+    <Content Include="Public\fonts\SVG\comment.svg" />
+    <Content Include="Public\fonts\SVG\comments-smiley.svg" />
+    <Content Include="Public\fonts\SVG\comments.svg" />
+    <Content Include="Public\fonts\SVG\control-backward.svg" />
+    <Content Include="Public\fonts\SVG\control-eject.svg" />
+    <Content Include="Public\fonts\SVG\control-forward.svg" />
+    <Content Include="Public\fonts\SVG\control-pause.svg" />
+    <Content Include="Public\fonts\SVG\control-play.svg" />
+    <Content Include="Public\fonts\SVG\control-record.svg" />
+    <Content Include="Public\fonts\SVG\control-shuffle.svg" />
+    <Content Include="Public\fonts\SVG\control-skip-backward.svg" />
+    <Content Include="Public\fonts\SVG\control-skip-forward.svg" />
+    <Content Include="Public\fonts\SVG\control-stop.svg" />
+    <Content Include="Public\fonts\SVG\credit-card.svg" />
+    <Content Include="Public\fonts\SVG\crown.svg" />
+    <Content Include="Public\fonts\SVG\css3.svg" />
+    <Content Include="Public\fonts\SVG\cup.svg" />
+    <Content Include="Public\fonts\SVG\cut.svg" />
+    <Content Include="Public\fonts\SVG\dashboard.svg" />
+    <Content Include="Public\fonts\SVG\desktop.svg" />
+    <Content Include="Public\fonts\SVG\direction-alt.svg" />
+    <Content Include="Public\fonts\SVG\direction.svg" />
+    <Content Include="Public\fonts\SVG\download.svg" />
+    <Content Include="Public\fonts\SVG\dribbble.svg" />
+    <Content Include="Public\fonts\SVG\dropbox-alt.svg" />
+    <Content Include="Public\fonts\SVG\dropbox.svg" />
+    <Content Include="Public\fonts\SVG\drupal.svg" />
+    <Content Include="Public\fonts\SVG\email.svg" />
+    <Content Include="Public\fonts\SVG\envelope.svg" />
+    <Content Include="Public\fonts\SVG\eraser.svg" />
+    <Content Include="Public\fonts\SVG\exchange-vertical.svg" />
+    <Content Include="Public\fonts\SVG\export.svg" />
+    <Content Include="Public\fonts\SVG\eye.svg" />
+    <Content Include="Public\fonts\SVG\face-sad.svg" />
+    <Content Include="Public\fonts\SVG\face-smile.svg" />
+    <Content Include="Public\fonts\SVG\facebook.svg" />
+    <Content Include="Public\fonts\SVG\file.svg" />
+    <Content Include="Public\fonts\SVG\files.svg" />
+    <Content Include="Public\fonts\SVG\filter.svg" />
+    <Content Include="Public\fonts\SVG\flag-alt-2.svg" />
+    <Content Include="Public\fonts\SVG\flag-alt.svg" />
+    <Content Include="Public\fonts\SVG\flag.svg" />
+    <Content Include="Public\fonts\SVG\flickr-alt.svg" />
+    <Content Include="Public\fonts\SVG\flickr.svg" />
+    <Content Include="Public\fonts\SVG\folder.svg" />
+    <Content Include="Public\fonts\SVG\fullscreen.svg" />
+    <Content Include="Public\fonts\SVG\gallery.svg" />
+    <Content Include="Public\fonts\SVG\game.svg" />
+    <Content Include="Public\fonts\SVG\gift.svg" />
+    <Content Include="Public\fonts\SVG\github.svg" />
+    <Content Include="Public\fonts\SVG\google.svg" />
+    <Content Include="Public\fonts\SVG\hand-drag.svg" />
+    <Content Include="Public\fonts\SVG\hand-open.svg" />
+    <Content Include="Public\fonts\SVG\hand-point-down.svg" />
+    <Content Include="Public\fonts\SVG\hand-point-left.svg" />
+    <Content Include="Public\fonts\SVG\hand-point-right.svg" />
+    <Content Include="Public\fonts\SVG\hand-point-up.svg" />
+    <Content Include="Public\fonts\SVG\hand-stop.svg" />
+    <Content Include="Public\fonts\SVG\harddrive.svg" />
+    <Content Include="Public\fonts\SVG\harddrives.svg" />
+    <Content Include="Public\fonts\SVG\headphone-alt.svg" />
+    <Content Include="Public\fonts\SVG\headphone.svg" />
+    <Content Include="Public\fonts\SVG\heart-broken.svg" />
+    <Content Include="Public\fonts\SVG\heart.svg" />
+    <Content Include="Public\fonts\SVG\help-alt.svg" />
+    <Content Include="Public\fonts\SVG\help.svg" />
+    <Content Include="Public\fonts\SVG\home.svg" />
+    <Content Include="Public\fonts\SVG\html5.svg" />
+    <Content Include="Public\fonts\SVG\hummer.svg" />
+    <Content Include="Public\fonts\SVG\id-badge.svg" />
+    <Content Include="Public\fonts\SVG\image.svg" />
+    <Content Include="Public\fonts\SVG\import.svg" />
+    <Content Include="Public\fonts\SVG\infinite.svg" />
+    <Content Include="Public\fonts\SVG\info-alt.svg" />
+    <Content Include="Public\fonts\SVG\info.svg" />
+    <Content Include="Public\fonts\SVG\ink-pen.svg" />
+    <Content Include="Public\fonts\SVG\instagram.svg" />
+    <Content Include="Public\fonts\SVG\Italic.svg" />
+    <Content Include="Public\fonts\SVG\joomla.svg" />
+    <Content Include="Public\fonts\SVG\jsfiddle.svg" />
+    <Content Include="Public\fonts\SVG\key.svg" />
+    <Content Include="Public\fonts\SVG\layers-alt.svg" />
+    <Content Include="Public\fonts\SVG\layers.svg" />
+    <Content Include="Public\fonts\SVG\layout-accordion-list.svg" />
+    <Content Include="Public\fonts\SVG\layout-accordion-merged.svg" />
+    <Content Include="Public\fonts\SVG\layout-accordion-separated.svg" />
+    <Content Include="Public\fonts\SVG\layout-column2-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-column2.svg" />
+    <Content Include="Public\fonts\SVG\layout-column3-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-column3.svg" />
+    <Content Include="Public\fonts\SVG\layout-column4-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-column4.svg" />
+    <Content Include="Public\fonts\SVG\layout-cta-btn-left.svg" />
+    <Content Include="Public\fonts\SVG\layout-cta-btn-right.svg" />
+    <Content Include="Public\fonts\SVG\layout-cta-center.svg" />
+    <Content Include="Public\fonts\SVG\layout-cta-left.svg" />
+    <Content Include="Public\fonts\SVG\layout-cta-right.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid2-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid2-thumb.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid2.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid3-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid3.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid4-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-grid4.svg" />
+    <Content Include="Public\fonts\SVG\layout-line-solid.svg" />
+    <Content Include="Public\fonts\SVG\layout-list-large-image.svg" />
+    <Content Include="Public\fonts\SVG\layout-list-post.svg" />
+    <Content Include="Public\fonts\SVG\layout-list-thumb-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-list-thumb.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-center-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-center.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-left-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-left.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-overlay-alt-2.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-overlay-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-overlay.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-right-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-media-right.svg" />
+    <Content Include="Public\fonts\SVG\layout-menu-full.svg" />
+    <Content Include="Public\fonts\SVG\layout-menu-separated.svg" />
+    <Content Include="Public\fonts\SVG\layout-menu-v.svg" />
+    <Content Include="Public\fonts\SVG\layout-menu.svg" />
+    <Content Include="Public\fonts\SVG\layout-placeholder.svg" />
+    <Content Include="Public\fonts\SVG\layout-sidebar-2.svg" />
+    <Content Include="Public\fonts\SVG\layout-sidebar-left.svg" />
+    <Content Include="Public\fonts\SVG\layout-sidebar-none.svg" />
+    <Content Include="Public\fonts\SVG\layout-sidebar-right.svg" />
+    <Content Include="Public\fonts\SVG\layout-slider-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-slider.svg" />
+    <Content Include="Public\fonts\SVG\layout-tab-min.svg" />
+    <Content Include="Public\fonts\SVG\layout-tab-v.svg" />
+    <Content Include="Public\fonts\SVG\layout-tab-window.svg" />
+    <Content Include="Public\fonts\SVG\layout-tab.svg" />
+    <Content Include="Public\fonts\SVG\layout-width-default-alt.svg" />
+    <Content Include="Public\fonts\SVG\layout-width-default.svg" />
+    <Content Include="Public\fonts\SVG\layout-width-full.svg" />
+    <Content Include="Public\fonts\SVG\layout.svg" />
+    <Content Include="Public\fonts\SVG\light-bulb.svg" />
+    <Content Include="Public\fonts\SVG\line-dashed.svg" />
+    <Content Include="Public\fonts\SVG\line-dotted.svg" />
+    <Content Include="Public\fonts\SVG\line-double.svg" />
+    <Content Include="Public\fonts\SVG\link.svg" />
+    <Content Include="Public\fonts\SVG\linkedin.svg" />
+    <Content Include="Public\fonts\SVG\linux.svg" />
+    <Content Include="Public\fonts\SVG\list-ol.svg" />
+    <Content Include="Public\fonts\SVG\list.svg" />
+    <Content Include="Public\fonts\SVG\location-arrow.svg" />
+    <Content Include="Public\fonts\SVG\location-pin.svg" />
+    <Content Include="Public\fonts\SVG\lock.svg" />
+    <Content Include="Public\fonts\SVG\loop.svg" />
+    <Content Include="Public\fonts\SVG\magnet.svg" />
+    <Content Include="Public\fonts\SVG\map-alt.svg" />
+    <Content Include="Public\fonts\SVG\map.svg" />
+    <Content Include="Public\fonts\SVG\marker-alt.svg" />
+    <Content Include="Public\fonts\SVG\marker.svg" />
+    <Content Include="Public\fonts\SVG\medall-alt.svg" />
+    <Content Include="Public\fonts\SVG\medall.svg" />
+    <Content Include="Public\fonts\SVG\menu-alt.svg" />
+    <Content Include="Public\fonts\SVG\menu.svg" />
+    <Content Include="Public\fonts\SVG\microphone-alt.svg" />
+    <Content Include="Public\fonts\SVG\microphone.svg" />
+    <Content Include="Public\fonts\SVG\microsoft-alt.svg" />
+    <Content Include="Public\fonts\SVG\microsoft.svg" />
+    <Content Include="Public\fonts\SVG\minus.svg" />
+    <Content Include="Public\fonts\SVG\mobile.svg" />
+    <Content Include="Public\fonts\SVG\money.svg" />
+    <Content Include="Public\fonts\SVG\more-alt.svg" />
+    <Content Include="Public\fonts\SVG\more.svg" />
+    <Content Include="Public\fonts\SVG\mouse-alt.svg" />
+    <Content Include="Public\fonts\SVG\mouse.svg" />
+    <Content Include="Public\fonts\SVG\music-alt.svg" />
+    <Content Include="Public\fonts\SVG\music.svg" />
+    <Content Include="Public\fonts\SVG\na.svg" />
+    <Content Include="Public\fonts\SVG\new-window.svg" />
+    <Content Include="Public\fonts\SVG\notepad.svg" />
+    <Content Include="Public\fonts\SVG\package.svg" />
+    <Content Include="Public\fonts\SVG\paint-bucket.svg" />
+    <Content Include="Public\fonts\SVG\paint-roller.svg" />
+    <Content Include="Public\fonts\SVG\palette.svg" />
+    <Content Include="Public\fonts\SVG\panel.svg" />
+    <Content Include="Public\fonts\SVG\paragraph.svg" />
+    <Content Include="Public\fonts\SVG\pencil-alt.svg" />
+    <Content Include="Public\fonts\SVG\pencil-alt2.svg" />
+    <Content Include="Public\fonts\SVG\pencil.svg" />
+    <Content Include="Public\fonts\SVG\pie-chart.svg" />
+    <Content Include="Public\fonts\SVG\pin-alt.svg" />
+    <Content Include="Public\fonts\SVG\pin.svg" />
+    <Content Include="Public\fonts\SVG\pin2.svg" />
+    <Content Include="Public\fonts\SVG\pinterest-alt.svg" />
+    <Content Include="Public\fonts\SVG\pinterest.svg" />
+    <Content Include="Public\fonts\SVG\plug.svg" />
+    <Content Include="Public\fonts\SVG\plus.svg" />
+    <Content Include="Public\fonts\SVG\power-off.svg" />
+    <Content Include="Public\fonts\SVG\printer.svg" />
+    <Content Include="Public\fonts\SVG\pulse.svg" />
+    <Content Include="Public\fonts\SVG\quote-left.svg" />
+    <Content Include="Public\fonts\SVG\quote-right.svg" />
+    <Content Include="Public\fonts\SVG\receipt.svg" />
+    <Content Include="Public\fonts\SVG\reddit.svg" />
+    <Content Include="Public\fonts\SVG\reload.svg" />
+    <Content Include="Public\fonts\SVG\rocket.svg" />
+    <Content Include="Public\fonts\SVG\rss-alt.svg" />
+    <Content Include="Public\fonts\SVG\rss.svg" />
+    <Content Include="Public\fonts\SVG\ruler-alt-2.svg" />
+    <Content Include="Public\fonts\SVG\ruler-alt.svg" />
+    <Content Include="Public\fonts\SVG\ruler-pencil.svg" />
+    <Content Include="Public\fonts\SVG\ruler.svg" />
+    <Content Include="Public\fonts\SVG\save-alt.svg" />
+    <Content Include="Public\fonts\SVG\save.svg" />
+    <Content Include="Public\fonts\SVG\search.svg" />
+    <Content Include="Public\fonts\SVG\server.svg" />
+    <Content Include="Public\fonts\SVG\settings.svg" />
+    <Content Include="Public\fonts\SVG\share-alt.svg" />
+    <Content Include="Public\fonts\SVG\share.svg" />
+    <Content Include="Public\fonts\SVG\sharethis-alt.svg" />
+    <Content Include="Public\fonts\SVG\sharethis.svg" />
+    <Content Include="Public\fonts\SVG\shield.svg" />
+    <Content Include="Public\fonts\SVG\shift-left-alt.svg" />
+    <Content Include="Public\fonts\SVG\shift-left.svg" />
+    <Content Include="Public\fonts\SVG\shift-right-alt.svg" />
+    <Content Include="Public\fonts\SVG\shift-right.svg" />
+    <Content Include="Public\fonts\SVG\shine.svg" />
+    <Content Include="Public\fonts\SVG\shopping-cart-full.svg" />
+    <Content Include="Public\fonts\SVG\shopping-cart.svg" />
+    <Content Include="Public\fonts\SVG\shortcode.svg" />
+    <Content Include="Public\fonts\SVG\signal.svg" />
+    <Content Include="Public\fonts\SVG\skype.svg" />
+    <Content Include="Public\fonts\SVG\slice.svg" />
+    <Content Include="Public\fonts\SVG\smallcap.svg" />
+    <Content Include="Public\fonts\SVG\soundcloud.svg" />
+    <Content Include="Public\fonts\SVG\split-h.svg" />
+    <Content Include="Public\fonts\SVG\split-v-alt.svg" />
+    <Content Include="Public\fonts\SVG\split-v.svg" />
+    <Content Include="Public\fonts\SVG\spray.svg" />
+    <Content Include="Public\fonts\SVG\stack-overflow.svg" />
+    <Content Include="Public\fonts\SVG\stamp.svg" />
+    <Content Include="Public\fonts\SVG\star.svg" />
+    <Content Include="Public\fonts\SVG\stats-down.svg" />
+    <Content Include="Public\fonts\SVG\stats-up.svg" />
+    <Content Include="Public\fonts\SVG\support.svg" />
+    <Content Include="Public\fonts\SVG\tablet.svg" />
+    <Content Include="Public\fonts\SVG\tag.svg" />
+    <Content Include="Public\fonts\SVG\target.svg" />
+    <Content Include="Public\fonts\SVG\text.svg" />
+    <Content Include="Public\fonts\SVG\themify-favicon-alt.svg" />
+    <Content Include="Public\fonts\SVG\themify-favicon.svg" />
+    <Content Include="Public\fonts\SVG\themify-logo.svg" />
+    <Content Include="Public\fonts\SVG\thought.svg" />
+    <Content Include="Public\fonts\SVG\thumb-down.svg" />
+    <Content Include="Public\fonts\SVG\thumb-up.svg" />
+    <Content Include="Public\fonts\SVG\ticket.svg" />
+    <Content Include="Public\fonts\SVG\time.svg" />
+    <Content Include="Public\fonts\SVG\timer.svg" />
+    <Content Include="Public\fonts\SVG\trash.svg" />
+    <Content Include="Public\fonts\SVG\trello.svg" />
+    <Content Include="Public\fonts\SVG\truck.svg" />
+    <Content Include="Public\fonts\SVG\tumblr-alt.svg" />
+    <Content Include="Public\fonts\SVG\tumblr.svg" />
+    <Content Include="Public\fonts\SVG\twitter-alt.svg" />
+    <Content Include="Public\fonts\SVG\twitter.svg" />
+    <Content Include="Public\fonts\SVG\underline.svg" />
+    <Content Include="Public\fonts\SVG\unlink.svg" />
+    <Content Include="Public\fonts\SVG\unlock.svg" />
+    <Content Include="Public\fonts\SVG\upload.svg" />
+    <Content Include="Public\fonts\SVG\uppercase.svg" />
+    <Content Include="Public\fonts\SVG\user.svg" />
+    <Content Include="Public\fonts\SVG\vector.svg" />
+    <Content Include="Public\fonts\SVG\video-camera.svg" />
+    <Content Include="Public\fonts\SVG\video-clapper.svg" />
+    <Content Include="Public\fonts\SVG\view-grid.svg" />
+    <Content Include="Public\fonts\SVG\view-list-alt.svg" />
+    <Content Include="Public\fonts\SVG\view-list.svg" />
+    <Content Include="Public\fonts\SVG\vimeo-alt.svg" />
+    <Content Include="Public\fonts\SVG\vimeo.svg" />
+    <Content Include="Public\fonts\SVG\volume.svg" />
+    <Content Include="Public\fonts\SVG\wallet.svg" />
+    <Content Include="Public\fonts\SVG\wand.svg" />
+    <Content Include="Public\fonts\SVG\wheelchair.svg" />
+    <Content Include="Public\fonts\SVG\widget-alt.svg" />
+    <Content Include="Public\fonts\SVG\widget.svg" />
+    <Content Include="Public\fonts\SVG\widgetized.svg" />
+    <Content Include="Public\fonts\SVG\window.svg" />
+    <Content Include="Public\fonts\SVG\wordpress.svg" />
+    <Content Include="Public\fonts\SVG\world.svg" />
+    <Content Include="Public\fonts\SVG\write.svg" />
+    <Content Include="Public\fonts\SVG\yahoo.svg" />
+    <Content Include="Public\fonts\SVG\youtube.svg" />
+    <Content Include="Public\fonts\SVG\zip.svg" />
+    <Content Include="Public\fonts\SVG\zoom-in.svg" />
+    <Content Include="Public\fonts\SVG\zoom-out.svg" />
+    <Content Include="Public\fonts\themify-icons.css" />
+    <Content Include="Public\image\2.png" />
+    <Content Include="Public\image\avt-b.jpg" />
+    <Content Include="Public\image\Bienle.JPG" />
+    <Content Include="Public\image\exit.png" />
+    <Content Include="Public\image\faded.jpg" />
+    <Content Include="Public\image\FlyAway.jpg" />
+    <Content Include="Public\image\Hellcat.jpg" />
+    <Content Include="Public\image\hvtc-logo.jpg" />
+    <Content Include="Public\image\krazy.jpg" />
+    <Content Include="Public\image\levitate.jpg" />
+    <Content Include="Public\image\logo.png" />
+    <Content Include="Public\image\logotets.jpg" />
+    <Content Include="Public\image\lostcontrol.jpg" />
+    <Content Include="Public\image\Nevada.jpg" />
+    <Content Include="Public\image\Streamdenbaogio.jpg" />
+    <Content Include="Public\image\TheSpectre.jpg" />
+    <Content Include="Public\image\Unity.jpg" />
+    <Content Include="Public\image\waiting for love.jpg" />
+    <Content Include="Public\image\you.jpg" />
+    <Content Include="Public\js\audioplayer.js" />
+    <Content Include="Public\js\jquery.js" />
+    <Content Include="Public\js\main.js" />
+    <Content Include="Public\music\1.mp3" />
+    <Content Include="Public\music\10.mp3" />
+    <Content Include="Public\music\11.mp3" />
+    <Content Include="Public\music\12.mp3" />
+    <Content Include="Public\music\13.mp3" />
+    <Content Include="Public\music\14.mp3" />
+    <Content Include="Public\music\2.mp3" />
+    <Content Include="Public\music\3.mp3" />
+    <Content Include="Public\music\4.mp3" />
+    <Content Include="Public\music\5.mp3" />
+    <Content Include="Public\music\6.mp3" />
+    <Content Include="Public\music\7.mp3" />
+    <Content Include="Public\music\8.mp3" />
+    <Content Include="Public\music\9.mp3" />
+    <Content Include="Public\Public1\css\bootstrap.min.css" />
+    <Content Include="Public\Public1\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Public\Public1\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Public\Public1\css\owl.carousel.min.css" />
+    <Content Include="Public\Public1\css\style.css" />
+    <Content Include="Public\Public1\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Public\Public1\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Public\Public1\fonts\icomoon\demo.html" />
+    <Content Include="Public\Public1\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Public\Public1\fonts\icomoon\Read Me.txt" />
+    <Content Include="Public\Public1\fonts\icomoon\style.css" />
+    <Content Include="Public\Public1\images\bg_1.jpg" />
+    <Content Include="Public\Public1\images\undraw_file_sync_ot38.svg" />
+    <Content Include="Public\Public1\js\bootstrap.min.js" />
+    <Content Include="Public\Public1\js\jquery-3.3.1.min.js" />
+    <Content Include="Public\Public1\js\main.js" />
+    <Content Include="Public\Public1\js\owl.carousel.min.js" />
+    <Content Include="Public\Public1\js\popper.min.js" />
+    <Content Include="Public\Public1\audio\1.mp3" />
+    <Content Include="Public\Public1\audio\10.mp3" />
+    <Content Include="Public\Public1\audio\11.mp3" />
+    <Content Include="Public\Public1\audio\12.mp3" />
+    <Content Include="Public\Public1\audio\13.mp3" />
+    <Content Include="Public\Public1\audio\2.mp3" />
+    <Content Include="Public\Public1\audio\3.mp3" />
+    <Content Include="Public\Public1\audio\4.mp3" />
+    <Content Include="Public\Public1\audio\5.mp3" />
+    <Content Include="Public\Public1\audio\6.mp3" />
+    <Content Include="Public\Public1\audio\7.mp3" />
+    <Content Include="Public\Public1\audio\8.mp3" />
+    <Content Include="Public\Public1\audio\9.mp3" />
+    <Content Include="Public\user_image\IMG_7746.JPG" />
+    <Content Include="Public\user_image\IMG_7763.JPG" />
+    <Content Include="Public\user_image\IMG_7769.JPG" />
+    <Content Include="Public\user_image\IMG_7819.JPG" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Maste_Admin.Master.cs">
+      <DependentUpon>Maste_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Maste_Admin.Master.designer.cs">
+      <DependentUpon>Maste_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Playy.aspx.cs">
+      <DependentUpon>Playy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Playy.aspx.designer.cs">
+      <DependentUpon>Playy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QLCASI.aspx.cs">
+      <DependentUpon>QLCASI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QLCASI.aspx.designer.cs">
+      <DependentUpon>QLCASI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QLMuSic.aspx.cs">
+      <DependentUpon>QLMuSic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QLMuSic.aspx.designer.cs">
+      <DependentUpon>QLMuSic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\QLTheLoai.aspx.cs">
+      <DependentUpon>QLTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\QLTheLoai.aspx.designer.cs">
+      <DependentUpon>QLTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaiHat.aspx.cs">
+      <DependentUpon>BaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaiHat.aspx.designer.cs">
+      <DependentUpon>BaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKi.aspx.cs">
+      <DependentUpon>DangKi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKi.aspx.designer.cs">
+      <DependentUpon>DangKi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Play.aspx.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Play.aspx.designer.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\fonts\fonts\themify.eot" />
+    <Content Include="Public\fonts\fonts\themify.ttf" />
+    <Content Include="Public\fonts\fonts\themify.woff" />
+    <Content Include="Public\fonts\Themify IconFonts 5-23-2014.json" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Public\css\.DS_Store" />
+    <Content Include="Public\css\bootstrap.min.css.map" />
+    <Content Include="Public\Public1\css\.DS_Store" />
+    <Content Include="Public\Public1\css\bootstrap.min.css.map" />
+    <Content Include="Public\Public1\fonts\.DS_Store" />
+    <Content Include="Public\Public1\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Public\Public1\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Public\Public1\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Public\Public1\fonts\icomoon\selection.json" />
+    <Content Include="Public\Public1\images\.DS_Store" />
+    <Content Include="Public\Public1\scss\.DS_Store" />
+    <Content Include="Public\Public1\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_alert.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_badge.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_button-group.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_buttons.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_card.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_carousel.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_close.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_code.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_forms.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_functions.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_grid.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_images.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_input-group.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_list-group.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_media.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_mixins.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_modal.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_nav.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_navbar.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_pagination.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_popover.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_print.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_progress.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_reboot.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_root.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_spinners.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_tables.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_toasts.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_transitions.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_type.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_utilities.scss" />
+    <Content Include="Public\Public1\scss\bootstrap\_variables.scss" />
+    <Content Include="Public\Public1\scss\style.scss" />
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
+    <Content Include="admin\Maste_Admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51832</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51832/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

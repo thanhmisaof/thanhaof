@@ -1,0 +1,11 @@
+E:\Thực hành C#\QLSV\QLSV\bin\Debug\QLSV.exe.config
+E:\Thực hành C#\QLSV\QLSV\bin\Debug\QLSV.exe
+E:\Thực hành C#\QLSV\QLSV\bin\Debug\QLSV.pdb
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.csproj.AssemblyReference.cache
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.frmLop_Load.resources
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.exe
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.pdb
+E:\Thực hành C#\QLSV\QLSV\obj\Debug\QLSV.formsinhvien.resources
